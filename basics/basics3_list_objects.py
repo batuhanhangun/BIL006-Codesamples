@@ -1,5 +1,5 @@
 #List objects
-shopping_list = ["eggs", "milk", "chocolate", "water"]
+shopping_list = ['eggs', 'milk', 'chocolate', 'water']
 
 #Basic output
 print("==============================================================================")
@@ -24,16 +24,16 @@ print("=========================================================================
 # list.append(element_to_be_added)
 print("==============================================================================")
 print("Appending a list")
-shopping_list.append("honey")
+shopping_list.append('honey')
 print(shopping_list)
 print("==============================================================================")
 
 
-#Insert an element to the specific place of a list
+#Insert an element to the specific index of a list
 # list.insert(index, element_to_be_added)
 print("==============================================================================")
 print("Inserting an item into a specific index in a list")
-shopping_list.insert(3, "yoghurt")
+shopping_list.insert(3, 'yoghurt')
 print(shopping_list)
 print("==============================================================================")
 
@@ -41,7 +41,7 @@ print("=========================================================================
 #Duplicate values are allowed in list
 print("==============================================================================")
 print("Inserting duplicate values")
-shopping_list.append("honey")
+shopping_list.append('honey')
 print(shopping_list)
 print("Length of list: " + str(len(shopping_list)))
 print("==============================================================================")
@@ -62,7 +62,7 @@ print("=========================================================================
 #Remove element with a specific value (only removes first occurrence)
 print("==============================================================================")
 print("Removing an element from a list with remove()")
-shopping_list.remove("chocolate")
+shopping_list.remove('chocolate')
 print(shopping_list)
 print("Length of list after pop operation: " + str(len(shopping_list)))
 print("==============================================================================")
