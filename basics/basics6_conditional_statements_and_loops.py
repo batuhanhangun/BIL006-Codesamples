@@ -34,7 +34,7 @@ iterator_variable1 = 1
 while iterator_variable1 < 6:
   print(iterator_variable1)
   iterator_variable1 += iterator_variable1
-print("\n")
+print('\n')
 
 iterator_variable1 = 1
 while iterator_variable1 < 6:
@@ -42,7 +42,7 @@ while iterator_variable1 < 6:
   if iterator_variable1 == 3:
     break
   iterator_variable1 += 1
-print("\n")
+print('\n')
   
 iterator_variable1 = 0
 while iterator_variable1 < 6:
@@ -50,7 +50,7 @@ while iterator_variable1 < 6:
   if iterator_variable1 == 3:
     continue
   print(iterator_variable1)
-print("\n")
+print('\n')
   
 print("=====================================================\n")
 
@@ -63,24 +63,24 @@ print("=====================================================")
 print("For loop")
 for iterator_variable2 in range(5):
   print(iterator_variable2)
-print("\n")
+print('\n')
 
 for iterator_variable2 in range(0, 8):
   print(iterator_variable2)
-print("\n")
+print('\n')
  
 #Increment the sequence with 2 (default value = 1):
 for iterator_variable2 in range(1, 16, 2):
   print(iterator_variable2)
-print("\n")
+print('\n')
 
 #Iterating a string
-password = "123!*a421gfd"
+password = '123!*a421gfd'
 for item in password:
   print(item)
 
 #Iterating a list
-shopping_list = ["eggs", "milk", "chocolate", "water"]
+shopping_list = ['eggs', 'milk', 'chocolate', 'water']
 for item in shopping_list:
   print(item)
 print("=====================================================\n")
