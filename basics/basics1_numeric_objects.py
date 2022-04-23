@@ -16,13 +16,13 @@ print("Combining numeric type objects with string type objects")
 # str(var) -> converts any suitable object into a string 
 # type object and stores it in a temporary object
 # without modifying the original input argument object
-print("number1 =" + str(number1))
-print("number2 =" + str(number2))
+print("number1 = " + str(number1))
+print("number2 = " + str(number2))
 
 
 number3 = number1 + number2
 print("number1 + number2 = " + str(number1+number2))
-print("number3 =" + str(number3))
+print("number3 = " + str(number3))
 
 number4 = number3
 print("number4 =" + str(number4))
