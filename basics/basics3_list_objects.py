@@ -7,38 +7,38 @@ print("Basic output")
 print(shopping_list)
 print("==============================================================================")
 
-#Lenght of a list
+#Length of a list object
 print("==============================================================================")
-print("Length of list: " + str(len(shopping_list)))
+print("Length of list object: " + str(len(shopping_list)))
 print("==============================================================================")
 
-#Accesing any element in a list
-#index starts at 0 in Python!
+#Accesing any element in a list object
+#indices start at 0 in Python!
 print("==============================================================================")
-print("Accesing any item in a list")
+print("Accesing any item in a list object")
 print(shopping_list[2])
 print("==============================================================================")
 
 
-#Insert an element to the end of a list
+#Insert an element to the end of a list object
 # list.append(element_to_be_added)
 print("==============================================================================")
-print("Appending a list")
+print("Appending a list object")
 shopping_list.append('honey')
 print(shopping_list)
 print("==============================================================================")
 
 
-#Insert an element to the specific index of a list
+#Insert an element to the specific index of a list object
 # list.insert(index, element_to_be_added)
 print("==============================================================================")
-print("Inserting an item into a specific index in a list")
+print("Inserting an item into a specific index in a list object")
 shopping_list.insert(3, 'yoghurt')
 print(shopping_list)
 print("==============================================================================")
 
 
-#Duplicate values are allowed in list
+#Duplicate values are allowed in list objects
 print("==============================================================================")
 print("Inserting duplicate values")
 shopping_list.append('honey')
@@ -49,9 +49,9 @@ print("=========================================================================
 
 
 
-#Remove element from a list
+#Remove element from a list object
 print("==============================================================================")
-print("Removing an element from a list with pop()")
+print("Removing an element from a list object with pop()")
 shopping_list.pop(len(shopping_list)-1)
 print(shopping_list)
 print("Length of list after pop operation: " + str(len(shopping_list)))
@@ -61,7 +61,7 @@ print("=========================================================================
 
 #Remove element with a specific value (only removes first occurrence)
 print("==============================================================================")
-print("Removing an element from a list with remove()")
+print("Removing an element from a list object with remove()")
 shopping_list.remove('chocolate')
 print(shopping_list)
 print("Length of list after pop operation: " + str(len(shopping_list)))
@@ -70,14 +70,14 @@ print("=========================================================================
 
 #Sorting a list
 print("==============================================================================")
-print("Sorting a list with sort()")
+print("Sorting the items of list object with sort()")
 shopping_list.sort()
 print(shopping_list)
 print("==============================================================================")
 
 #Reversing a list
 print("==============================================================================")
-print("Reversing a list with reverse()")
+print("Reversing the items of a list object with reverse()")
 shopping_list.reverse()
 print(shopping_list)
 print("==============================================================================")
@@ -85,7 +85,7 @@ print("=========================================================================
 
 #Removes all elements from a list
 print("==============================================================================")
-print("Removing all elements from a list with clear()")
+print("Removing all items from a list object with clear()")
 shopping_list.clear()
 print(shopping_list)
 ("==============================================================================")
