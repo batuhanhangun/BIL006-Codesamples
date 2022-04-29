@@ -19,6 +19,7 @@ string3 = string1 + string2
 print(string3)
 print("string3: " + string3)
 
+
 #Better to add some space to make it more appealing
 string3 = string1 + " " + string2
 print(string3)
@@ -27,6 +28,9 @@ print("=========================================================================
 
 print("==============================================================================")
 print("Swapping values between two objects")
+
+#NOTE: There is a more efficient and easy to use way to create formatted string by using the string literals called as f-string
+# http://cissandbox.bentley.edu/sandbox/wp-content/uploads/2022-02-10-Documentation-on-f-strings-Updated.pdf
 
 #Swapping values between two string objects
 print("\nValues of string1 and string2 before swap")
