@@ -55,7 +55,7 @@ print('\n')
 print("=====================================================\n")
 
 #For loop
-# The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+# The a_sequence = range(n) function returns a consecutive sequence that consists of "n" numbers that start from 0 by default.
 
 
 
@@ -65,11 +65,12 @@ for iterator_variable2 in range(5):
   print(iterator_variable2)
 print('\n')
 
+#Defining a custom range between 0 and 8 (8 is not included in the sequence!)
 for iterator_variable2 in range(0, 8):
   print(iterator_variable2)
 print('\n')
  
-#Increment the sequence with 2 (default value = 1):
+#Increment the elements of a sequence with 2 (default value = 1)
 for iterator_variable2 in range(1, 16, 2):
   print(iterator_variable2)
 print('\n')
