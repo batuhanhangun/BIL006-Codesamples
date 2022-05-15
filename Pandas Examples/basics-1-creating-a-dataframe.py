@@ -9,7 +9,7 @@ player_list = { 'Server': ['Olympias', 'Arest', 'Xigentonon', 'Berasmus', 'Dieys
                 'Gold': [124, 543, 654, 234, 786]}
 
 # Dictionary was converted into pandas DataFrame
-player_list_df = pandas.DataFrame(player_list, columns = ['Server', 'Player Name', 'Level', 'Class', 'Gold'])
+player_list_df = pandas.DataFrame(player_list, columns = ['Server Name', 'Player Name', 'Level', 'Class', 'Gold'])
 
 print("Player List DataFrame :\n", player_list_df)
 

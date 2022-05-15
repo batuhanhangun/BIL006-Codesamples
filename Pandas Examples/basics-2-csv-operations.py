@@ -1,4 +1,4 @@
-# CSV files were taken from https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html
+# CSV files tribute: https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html
 import pandas
 
 file_path = 'addresses.csv'
