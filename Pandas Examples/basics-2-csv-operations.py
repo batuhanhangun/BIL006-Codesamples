@@ -1,19 +1,20 @@
 # CSV files tribute: https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html
+#                    https://github.com/rishabh89007/Time_Series_Datasets
 import pandas
 
-file_path = 'addresses.csv'
+file_path = 'Pandas Examples\\addresses.csv'
 
 #How to read a simple CSV file
 addresses_pandas_dataframe = pandas.read_csv(file_path)
 print(addresses_pandas_dataframe)
 print('\n')
 
-file_path = 'letter_frequency.csv'
+file_path = 'Pandas Examples\\letter_frequency.csv'
 letter_freqs_pandas_dataframe = pandas.read_csv(file_path)
 print(letter_freqs_pandas_dataframe)
 print('\n')
 
-file_path = 'faithful.csv'
+file_path = 'Pandas Examples\\faithful.csv'
 geyser_pandas_dataframe = pandas.read_csv(file_path)
 print(geyser_pandas_dataframe)
 print('\n')
@@ -94,4 +95,11 @@ for df_row in player_list_df.itertuples():
     print (df_row[2], df_row[3]) #In df_row, dataFrame contents starts from index 1
 print('\n')
 
-print('\n')
+#Writing a dataFrame into a CSV file
+target_path = 'Pandas Examples\written_df.csv'
+pandas.DataFrame.to_csv(player_list_df, target_path)
+
+#Writing only selected columns
+target_path = 'Pandas Examples\written_df_cols.csv'
+pandas.DataFrame.to_csv(player_list_df, target_path, columns=['Server', 'Player Name', 'Level'])
+
