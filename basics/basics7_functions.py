@@ -25,7 +25,7 @@ def print_user_info(input_name: str, input_surname: str, input_age: int):
     
 #Passing argument to a function with two parameters
 name = 'Thomas'
-surname = 'Shelby'
+surname = 'Shelbie'
 age = 25
 print_user_info(name, surname, age)
 
@@ -33,7 +33,7 @@ print_user_info(name, surname, age)
 #Syntax error. Argument order is important!
 
 #Passing keyword arguments to a function with parameters (argument order is NOT important)
-print_user_info(input_age = 41, input_surname = 'White', input_name = 'Walter')
+print_user_info(input_age = 41, input_surname = 'White', input_name = 'Water')
 
 print("====================================================================================================\n")
 
@@ -42,8 +42,8 @@ def student_info(student_name: str, student_surname: str, student_id: int, is_en
     print("Name: " + student_name + "\nSurname: " + student_surname + "\nID: " + str(student_id) + "\nEnrolled: " + str(is_enrolled) + "\nScholarship: " + str(scholarship))
 
 #Passing keyword arguments to a function with default arguments
-name = 'Mika'
-surname = 'Hakkinen'
+name = 'Mikan'
+surname = 'Hakkinend'
 student_id = 321412512
 student_info(name, surname, student_id)
 student_info(name, surname, student_id, is_enrolled = True)
