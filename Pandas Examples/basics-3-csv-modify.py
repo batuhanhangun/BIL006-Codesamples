@@ -56,3 +56,22 @@ print(ren_energy_new_df)
 print(f"{'Total Rows:'} {rows} { 'Total Cols:'} {cols}")
 print(type(ren_energy_new_df))
 print('\n')
+
+#Accessing any cell of a DataFrame by using row-col notation
+ren_energy_new_df.iat[4, 2] = "Solar"
+print(ren_energy_new_df)
+print('\n')
+ren_energy_new_df.iat[0, 2] = "Nuclear"
+print(ren_energy_new_df)
+print('\n')
+ren_energy_new_df.iat[0, 1] = 1111111
+print(ren_energy_new_df)
+print('\n')
+ren_energy_new_df.iat[2, 0] = 1983
+print(ren_energy_new_df)
+print('\n')
+
+#To hide index labels
+blankIndex=[''] * len(ren_energy_new_df)
+ren_energy_new_df.index=blankIndex
+print(ren_energy_new_df)
