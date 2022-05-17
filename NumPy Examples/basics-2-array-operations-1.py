@@ -2,7 +2,7 @@
 # Accessing numpy array elements
 # Concatenating two arrays
 # Getting array shape
-
+# Conditional indexing
 
 import numpy
 
@@ -70,3 +70,14 @@ print(numpy_matrix)
 print(f_str)
 print('Type: ' + str(type(numpy_matrix)))
 print('\n')
+
+#4) Conditional indexing
+test_array = numpy.array([[0 , -2, 23, 34, 83], [1, -5, 98, -44, 13]])
+print(test_array[test_array < 0])
+
+greater_than_twenty = (test_array >= 20)
+print(test_array[greater_than_twenty])
+
+test_array2 = test_array[(test_array > 20) & (test_array < 90)]
+print(test_array2)
+
