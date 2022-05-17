@@ -61,10 +61,7 @@ print('Type: ' + str(type(concat_array)))
 print('\n')
 
 #3)Getting array shape
-array_size_info = numpy_matrix.shape
-print('numpy_matrix size: ' + str(array_size_info))
-total_rows = array_size_info[0]
-total_cols = array_size_info[1]
+total_rows, total_cols = numpy_matrix.shape
 f_str = f"numpy_matrix: {total_rows}x{total_cols}x1"
 print(numpy_matrix)
 print(f_str)
