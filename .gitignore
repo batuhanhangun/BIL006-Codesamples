@@ -2639,3 +2639,4 @@ NumPy Examples/numPyVenv/Scripts/pythonw.exe
 Matplotlib Examples/matplotlibEnv
 Matplotlib Examples/export_example.pdf
 .gitignore
+Matplotlib Examples/stinkbug.png
