@@ -42,7 +42,13 @@ matplotlib.pyplot.xlabel('Index')
 matplotlib.pyplot.show()
 
 # Adding text to plots
-
+# matplotlib.pyplot.text(x_coords_of_the_text, y_coords_of_the_text, '<TEXT>')
+matplotlib.pyplot.plot(new_array, new_array*3, linewidth=5.0)
+matplotlib.pyplot.ylabel('A function of new_array')
+matplotlib.pyplot.xlabel('Index')
+matplotlib.pyplot.grid(True)
+matplotlib.pyplot.text(-10, 10, 'TEST', size=20)
+matplotlib.pyplot.show()
 
 # Multiple figures(Subplots)
 # Sinusoidal signals example
@@ -50,14 +56,22 @@ matplotlib.pyplot.show()
 # func2(t) = cos(2 * pi * t)
 time_array = numpy.arange(0.0, 2.0, 0.01)
 func1 = numpy.sin(2 * numpy.pi * time_array)
+max_val1 = numpy.max(func1)
+max_val_index1 = numpy.argmax(func1)/100
+print(f"{'Max val F1:'}{max_val1}{' Index: '}{max_val_index1}")
 func2 = numpy.cos(2 * numpy.pi * time_array)
+max_val2 = numpy.max(func2)
+max_val_index2 = numpy.argmax(func2)/100
+print(f"{'Max val F2:'}{max_val2}{' Index: '}{max_val_index2}")
 matplotlib.pyplot.figure(1)
 matplotlib.pyplot.subplot(211)
 matplotlib.pyplot.plot(time_array, func1)
 matplotlib.pyplot.ylabel('$func_{1}(t) = sin(2 * \pi * t)$')
 matplotlib.pyplot.xlabel('Time')
+matplotlib.pyplot.text(max_val_index1, max_val1, 'Peak Value', size=10)
 matplotlib.pyplot.subplot(212)
 matplotlib.pyplot.plot(time_array, func2)
 matplotlib.pyplot.ylabel('$func_{2}(t) = cos(2 * \pi * t)$')
 matplotlib.pyplot.xlabel('Time')
+matplotlib.pyplot.text(max_val_index2, max_val2, 'Peak Value', size=10)
 matplotlib.pyplot.show()
