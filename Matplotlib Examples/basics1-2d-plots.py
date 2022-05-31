@@ -74,4 +74,6 @@ matplotlib.pyplot.plot(time_array, func2)
 matplotlib.pyplot.ylabel('$func_{2}(t) = cos(2 * \pi * t)$')
 matplotlib.pyplot.xlabel('Time')
 matplotlib.pyplot.text(max_val_index2, max_val2, 'Peak Value', size=10)
+# Exporting plots to folder
+matplotlib.pyplot.savefig("Matplotlib Examples\export_example.pdf", dpi=350)
 matplotlib.pyplot.show()
